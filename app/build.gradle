@@ -9,8 +9,8 @@ android {
         applicationId "com.payjoy.persistentimeireader"
         minSdkVersion 28
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 1000001
+        versionName "1.0.0.01"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

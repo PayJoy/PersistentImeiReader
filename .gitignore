@@ -4,6 +4,9 @@
 *.ap_
 *.aab
 
+.idea
+app/.idea
+
 app/build/
 app/release/
 app/debug/

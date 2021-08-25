@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     String systemImei2 = getSystemImei(1, this);
     textView.setText("SystemImei2: " + systemImei2);
 
-    textView = findViewById(R.id.message);
+    textView = findViewById(R.id.message1);
     if (!TextUtils.isEmpty(systemImei1) && TextUtils.isEmpty(persistentImei1)) {
       textView.setText("PersistentImei 未初始化");
       textView.setVisibility(View.VISIBLE);
@@ -43,10 +43,11 @@ public class MainActivity extends AppCompatActivity {
       textView.setText("PersistentImei和系统IMEI不匹配");
       textView.setVisibility(View.VISIBLE);
     }
+    textView = findViewById(R.id.message2);
     if (!TextUtils.isEmpty(systemImei2) && TextUtils.isEmpty(persistentImei2)) {
       textView.setText("PersistentImei 未初始化");
       textView.setVisibility(View.VISIBLE);
-    } if (!TextUtils.isEmpty(systemImei2) && !systemImei2.equals(persistentImei2)) {
+    } else if (!TextUtils.isEmpty(systemImei2) && !systemImei2.equals(persistentImei2)) {
       textView.setText("PersistentImei和系统IMEI不匹配");
       textView.setVisibility(View.VISIBLE);
     }
